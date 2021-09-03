@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+:root {
+  --linkpink: rgb(216, 29, 216);
+  --linkpurple: rgb(98, 16, 250);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  padding: 10px;
+
+  @media (min-width: 600px) {
+    padding: 20px;
+  }
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0px;
+  bottom: -3px;
+  left: 0px;
+  background-color: var(--linkpink);
+}
+
+a:hover {
+  color: var(--linkpink);
+}
+
+a:hover::before {
+  background: linear-gradient(
+    to right,
+    var(--linkpink) 40%,
+    var(--linkpurple) 75%
+  );
+}
+
+li {
+  list-style-type: none;
+}
+
+nav.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin-right: 20px;
+}
+
+.logo {
+  float: left;
+}
+
+.navitems {
+  display: flex;
+  float: right;
+}
+
+#main {
+  margin: 0 10vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  font-style: italic;
+}
+
+.name {
+  padding: 3px;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.desc {
+  padding: 6px;
+  font-size: large;
+}
+
+.loc {
+  padding: 6px;
+  font-size: medium;
+  font-style: italic;
+}
