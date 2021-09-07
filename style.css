@@ -16,18 +16,13 @@ html {
 }
 
 body {
-  margin: 0%;
-  padding: 0%;
-  min-height: 100vh;
+  height: 90%;
   font-family: "Open Sans", sans-serif;
 }
 
 nav {
+  height: 10%;
   padding: 10px;
-
-  @media (min-width: 600px) {
-    padding: 20px;
-  }
 }
 
 a {
@@ -99,18 +94,18 @@ nav > ul > li {
 }
 
 .name {
-  padding: 3px;
+  padding: 3px 6px;
   font-size: xx-large;
   font-weight: 600;
 }
 
 .desc {
-  padding: 6px;
+  padding: 6px 6px;
   font-size: large;
 }
 
 .loc {
-  padding: 6px;
+  padding: 6px 0px;
   font-size: medium;
   font-style: italic;
 }

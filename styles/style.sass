@@ -1,0 +1,88 @@
+@import './hamburger'
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap")
+
+$linkpink: rgb(216, 29, 216)
+$linkpurple: rgb(98, 16, 250)
+
+// Primary Colors
+$primarywhite: #f5f4f4
+$primaryblack: #262a2a
+$primaryblue: #252caf
+
+// Secondary Colors
+$yellow: #FFF9EB
+$blue: #EBFAFF
+$red: #FFEBEE
+$green: #EBFFF2
+$black: #000000
+$white: #FFFFFF
+
+*
+  margin: 0%
+  padding: 0%
+
+html
+  font-size: 100%
+  box-sizing: border-box
+
+body
+  margin: 0%
+  padding: 0%
+  min-height: 100vh
+  font-family: "Open Sans", sans-serif
+
+nav
+  height: 10vh
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  ul
+    display: flex
+    align-items: center
+    li
+      list-style-type: none
+
+a
+  position: relative
+  text-decoration: none
+  margin: 0 20px
+
+  &::before
+    content: ""
+    position: absolute
+    height: 3px
+    right: 0px
+    bottom: -3px
+    left: 0px
+    background-color: $linkpink
+
+  &:hover
+    color: $linkpink
+    &::before
+      background: linear-gradient(to right, $linkpink 40%, $linkpurple 75%)
+
+section
+  margin: 0 10vw
+  display: grid
+  border: 2px solid black
+  grid-template-columns: auto 1fr
+  grid-template-rows: auto
+
+  .fullname
+    font-size: large
+    grid-column-start: 1
+    grid-column-end: -1
+
+  .description
+    grid-column-start: 1
+    grid-column-end: -1
+
+  .locicon
+    grid-row: 3
+    grid-column-start: 1
+    grid-column-end: 2
+
+  .location
+    grid-column-start: 2
+    grid-column-end: 3
