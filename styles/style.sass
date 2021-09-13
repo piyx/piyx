@@ -117,3 +117,27 @@ section
     
     @media (max-width: $small)
         padding: 15vh 6vw
+
+.cards
+    padding: 15vh 20vw
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 10vw
+    grid-row-gap: 10vh
+
+    @media (max-width: $small)
+        padding: 10vh 15vw
+        grid-template-columns: 1fr
+
+.card
+    .header
+        padding-bottom: 2vh
+        display: flex
+        img
+            padding-right: 1vw
+    
+        @media (max-width: $small)
+            p
+                font-size: large
+            img
+                padding-right: 2vw
