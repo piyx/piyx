@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <section id="#home">
-        <nav>
+        <nav >
             <a href="#">piyx</a>
             <ul>
                 <li><a href="#skills">SKILLS</a></li>
@@ -19,9 +21,9 @@
             </ul>
         </nav>
         <div class="fullname">
-            <p>hi there i'm abhishek</p>
+            <p class="header">hi there i'm abhishek</p>
         </div>
-        <div class="detailedview">
+        <div class="summary">
             <p>in a nutshell</p>
             <p>
                 Hello! I'm V Abhishek Kumar,  
@@ -37,11 +39,11 @@
     </section>
     <section id="skills">
         <div class="skills">
-            <p>skills</p>
+            <p class="header">skills</p>
         </div>
         <div class="cards">
             <div class="card">
-                <div class="header">
+                <div class="heading">
                     <img src="assets/icons/webdev.svg" alt="">
                     <p>WEB DEVELOPMENT</p>
                 </div>
@@ -52,7 +54,7 @@
                 </p>
             </div>
             <div class="card">
-                <div class="header">
+                <div class="heading">
                     <img src="assets/icons/appdev.svg" alt="">
                     <p>APP DEVELOPMENT</p>
                 </div>
@@ -62,7 +64,7 @@
                 </p>
             </div>
             <div class="card">
-                <div class="header">
+                <div class="heading">
                     <img src="assets/icons/api.svg" alt="">
                     <p>API DEVELOPMENT</p>
                 </div>
@@ -72,7 +74,7 @@
                 </p>
             </div>
             <div class="card">
-                <div class="header">
+                <div class="heading">
                     <img src="assets/icons/problemsolver.svg" alt="">
                     <p>PROBLEM SOLVING</p>
                 </div>
@@ -85,11 +87,11 @@
     </section>
     <section id="projects">
         <div class="projects">
-            <p>selected projects</p>
+            <p class="header">selected projects</p>
         </div>
-        <div class="detailedview">
+        <div class="summary">
             <p>briefly</p>
-            <p>
+            <p >
                 I love building random projects.
                 Here's a list of some of my personal
                 projects. All my projects are open source
@@ -99,65 +101,104 @@
 
         <div class="projectslist">
             <div class="column">
-                <p>what</p>
+                <p class="title">what</p>
                 <p>wait, what?</p>
                 <p>how</p>
             </div>
 
             <div class="column">
-                <p><a href="#">youtube to spotify</a><br>July 2020</p>
+                <div class="title">
+                    <p><a href="#">youtube to spotify</a></p>
+                    <p>July 2020</p>
+                </div>
                 <p>Script that automatically migrates all playlist songs from youtube to spotify</p>
-                <p>youtube api, spotify api, python</p>
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>youtube api, spotify api, python</p>
+                </div>
             </div>
 
             <div class="column">
-                <p><a href="#">discord bot</a><br>August 2020</p>
+                <div class="title">
+                    <p><a href="#">discord bot</a></p>
+                    <p>Aug 2020</p>
+                </div>
                 <p>A bot that can play music in multiple discord 
                     servers simultaneously. It also does a lot of random
-                    stuff.</p>
-                <p>python, discord.py, youtube-dl, beautiful soup</p>
+                    stuff.
+                </p>
+                
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>python, discord.py, youtube-dl, beautiful soup</p>
+                </div>
             </div>
 
             <div class="column">
-                <p><a href="#">crypto currency app</a><br>July 2021</p>
+                <div class="title">
+                    <p><a href="#">crypto currency app</a></p>
+                    <p>Jul 2021</p>
+                </div>
                 <p>App that displays the list of top cryptocurrencies
                     along with interactive graphs and useful statistics.
                     Also contains support for historical data.</p>
-                <p>android studio, java, coingecko api, postman</p>
+
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>android studio, java, coingecko api, postman</p>
+                </div>
             </div>
 
             <div class="column">
-                <p><a href="#">job social media</a><br>Sept. 2020</p>
+                <div class="title">
+                    <p><a href="#">job social media</a></p>
+                    <p>Sept. 2020</p>
+                </div>
                 <p>Social media platform that connects employers and employees.
                     It also provides the ability to search for jobs using keywords
                     like location and job position.</p>
-                <p>python, django, sqlite, bootstrap</p>
+
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>python, django, sqlite, bootstrap</p>
+                </div>
             </div>
 
             <div class="column">
-                <p><a href="#">reddit downloader</a><br>March 2020</p>
+                <div class="title">
+                    <p><a href="#">reddit downloader</a></p>
+                    <p>Mar 2020</p>
+                </div>
                 <p>Script to download top N wallpapers from any subreddit of your choice.</p>
-                <p>praw, python, requests</p>
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>praw, python, requests</p>
+                </div>
             </div>
 
-            <div class="column">
-                <p><a href="#">sorting visualizer</a><br>Dec 2019</p>
+            <div class="column" >
+                <div class="title">
+                    <p><a href="#">sorting visualizer</a></p>
+                    <p>Dec 2019</p>
+                </div>
                 <p>A project to visualize some of the most popular sorting algorithms.</p>
-                <p>python, tkinter</p>
+                <div>
+                    <p class="toolsused">Tools used</p>
+                    <p>python, tkinter</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="work">
         <div class="workexp">
-            <p>work experience</p>
+            <p class="header">work experience</p>
         </div>
-        <div class="detailedview">
-            <p>
-                <a href="#">Epsilon</a><br>
-                Software dev. Intern <br>
-                Jun 2021 - Aug 2021
-            </p>
-            <p>
+        <div class="workexplist">
+            <div class="title">
+                <p>Software dev. Intern @ <a href="#">Epsilon</a></p>
+                <p>Jun 2021 - Aug 2021</p>
+            </div>
+            <p >
                 Worked on the frontend website design and made the website responsive.
                 Created API wrappers and integrated social media components on the website.
                 Modified the API calls and migrated them from development environment to production environment.
@@ -166,11 +207,20 @@
     </section>
     <section id="contact">
         <div class="contact">
-            <p>contact me</p>
+            <p class="header">contact me</p>
         </div>
         <div class="socials">
-            <p>get in touch at <a href="#">piyx.abhishek@gmail.com</a></p>
+            <div class="social" >
+                <img src="assets/icons/email.svg" alt="">
+                <a href="#">piyx.abhishek@gmail.com</a>
+            </div>
+            <div class="social" >
+                <img src="assets/icons/github.svg" alt="">
+                <a href="#">https://github.com/piyx</a>
+            </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
