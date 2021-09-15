@@ -223,6 +223,10 @@ nav {
           align-items: center;
 }
 
+nav a {
+  font-weight: bold;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +246,9 @@ nav li {
     margin-bottom: 6vh;
   }
   nav li {
+    font-size: small;
+  }
+  nav a {
     font-size: small;
   }
 }
