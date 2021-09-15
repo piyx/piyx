@@ -16,9 +16,9 @@ Array.from(elements).forEach(element => {
     element.setAttribute("data-aos-duration", animationSpeed)
 })
 
-Array.from(headers).forEach(element => {
-    element.setAttribute("data-aos", headingAnimationType)
-    element.setAttribute("data-aos-duration", animationSpeed)
-})
+// Array.from(headers).forEach(element => {
+//     element.setAttribute("data-aos", headingAnimationType)
+//     element.setAttribute("data-aos-duration", animationSpeed)
+// })
 
 AOS.init()
