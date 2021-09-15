@@ -1,4 +1,4 @@
-let animationSpeed = "700"
+let animationSpeed = "300"
 let contentAnimationType = "fade-up"
 let headingAnimationType = "fade-right"
 
