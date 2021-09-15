@@ -25,16 +25,11 @@ $medium: 1200px
     background-color: $white
     color: $background
 
-p
-    font-size: large
+p, a
+    font-size: medium
     color: $white
     line-height: 1.7em
 
-    @media (max-width: $small)
-        font-size: medium
-
-a
-    color: $white
 
 .toolsused
     color: grey
@@ -140,9 +135,6 @@ nav
         grid-template-columns: 1fr 2fr 1fr
         grid-column-gap: 6vw
     
-    a
-        font-weight: bold
-    
     @media (max-width: $small)
         padding: 15vh 6vw
         .column
@@ -173,9 +165,6 @@ nav
 
             p
                 text-align: left
-            
-            p:last-child
-                padding-bottom: 2vh
 
 
 .cards
@@ -196,12 +185,7 @@ nav
         img
             padding-right: 1vw
         
-        p
-            font-weight: bolder
-        
         @media (max-width: $small)
-            p
-                font-size: large
             img
                 padding-right: 2vw
 
@@ -220,3 +204,13 @@ nav
     @media (max-width: $small)
         img
             width: 6vw
+
+.boldtext
+    font-weight: bold
+    font-size: large
+
+.italictext
+    font-style: italic
+    font-size: medium
+    color: grey
+    line-height: 2em

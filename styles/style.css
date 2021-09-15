@@ -30,20 +30,10 @@
   color: #000;
 }
 
-p {
-  font-size: large;
+p, a {
+  font-size: medium;
   color: #fff;
   line-height: 1.7em;
-}
-
-@media (max-width: 900px) {
-  p {
-    font-size: medium;
-  }
-}
-
-a {
-  color: #fff;
 }
 
 .toolsused {
@@ -291,10 +281,6 @@ nav li {
   grid-column-gap: 6vw;
 }
 
-.projectslist a {
-  font-weight: bold;
-}
-
 @media (max-width: 900px) {
   .projectslist {
     padding: 15vh 6vw;
@@ -343,9 +329,6 @@ nav li {
   .workexplist .title p {
     text-align: left;
   }
-  .workexplist .title p:last-child {
-    padding-bottom: 2vh;
-  }
 }
 
 .cards {
@@ -377,14 +360,7 @@ nav li {
   padding-right: 1vw;
 }
 
-.card .heading p {
-  font-weight: bolder;
-}
-
 @media (max-width: 900px) {
-  .card .heading p {
-    font-size: large;
-  }
   .card .heading img {
     padding-right: 2vw;
   }
@@ -411,5 +387,17 @@ nav li {
   .social img {
     width: 6vw;
   }
+}
+
+.boldtext {
+  font-weight: bold;
+  font-size: large;
+}
+
+.italictext {
+  font-style: italic;
+  font-size: medium;
+  color: grey;
+  line-height: 2em;
 }
 /*# sourceMappingURL=style.css.map */
