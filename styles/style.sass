@@ -99,7 +99,13 @@ nav
     align-items: center
 
     a
-        font-weight: bold
+        font-size: small
+        text-decoration: none
+        transition: 0.6s ease
+
+        &:hover
+            color: $red
+            text-decoration: underline
 
     ul
         display: flex
@@ -195,21 +201,6 @@ nav
             img
                 padding-right: 2vw
 
-.socials
-    margin: auto auto
-
-.social
-    padding-bottom: 1vh
-    img
-        width: 2vw
-        margin-right: 1vw
-    
-    a
-        font-size:  larger
-
-    @media (max-width: $small)
-        img
-            width: 6vw
 
 .boldtext
     font-weight: bold
@@ -220,3 +211,25 @@ nav
     font-size: medium
     color: grey
     line-height: 2em
+
+
+.socials
+    height: 60vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    // background-color: green
+    justify-content: center
+
+    img
+        height: 40px
+        margin: 4px 0px 4px 0px
+    
+    a, p
+        font-size: large
+
+head
+    img
+        height: 20px
+        width: 20px
