@@ -12,8 +12,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -40,7 +39,6 @@ p, a {
   color: grey;
   display: none;
 }
-
 @media (max-width: 900px) {
   .toolsused {
     display: block;
@@ -57,7 +55,6 @@ p, a {
   width: 100%;
   text-align: center;
 }
-
 .fullname p {
   font-size: 120px;
   font-weight: 750;
@@ -65,7 +62,6 @@ p, a {
   line-height: 1em;
   overflow-wrap: break-word;
 }
-
 @media (max-width: 900px) {
   .fullname p {
     font-size: 80px;
@@ -82,7 +78,6 @@ p, a {
   width: 100%;
   text-align: center;
 }
-
 .skills p {
   font-size: 120px;
   font-weight: 750;
@@ -90,7 +85,6 @@ p, a {
   line-height: 1em;
   overflow-wrap: break-word;
 }
-
 @media (max-width: 900px) {
   .skills p {
     font-size: 80px;
@@ -107,7 +101,6 @@ p, a {
   width: 100%;
   text-align: center;
 }
-
 .projects p {
   font-size: 120px;
   font-weight: 750;
@@ -115,7 +108,6 @@ p, a {
   line-height: 1em;
   overflow-wrap: break-word;
 }
-
 @media (max-width: 900px) {
   .projects p {
     font-size: 80px;
@@ -132,7 +124,6 @@ p, a {
   width: 100%;
   text-align: center;
 }
-
 .contact p {
   font-size: 120px;
   font-weight: 750;
@@ -140,7 +131,6 @@ p, a {
   line-height: 1em;
   overflow-wrap: break-word;
 }
-
 @media (max-width: 900px) {
   .contact p {
     font-size: 80px;
@@ -157,7 +147,6 @@ p, a {
   width: 100%;
   text-align: center;
 }
-
 .workexp p {
   font-size: 120px;
   font-weight: 750;
@@ -165,7 +154,6 @@ p, a {
   line-height: 1em;
   overflow-wrap: break-word;
 }
-
 @media (max-width: 900px) {
   .workexp p {
     font-size: 80px;
@@ -176,11 +164,8 @@ p, a {
 .projectslist .column .title {
   text-align: right;
 }
-
 @media (max-width: 900px) {
   .projectslist .column .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .projectslist .column .title p:first-child {
@@ -192,18 +177,10 @@ section {
   padding-top: 10vh;
   min-height: 100vh;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
-
 @media (max-width: 900px) {
   section {
     padding-top: 6vh;
@@ -213,42 +190,27 @@ section {
 nav {
   width: 100%;
   margin-bottom: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 nav a {
   font-size: small;
   text-decoration: none;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
-
 nav a:hover {
   color: #f5e5e7;
   text-decoration: underline;
 }
-
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 nav li {
   list-style-type: none;
   padding: 0 10px;
 }
-
 @media (max-width: 900px) {
   nav {
     margin-bottom: 6vh;
@@ -263,21 +225,16 @@ nav li {
 
 .summary {
   padding: 15vh 20vw 15vh 10vw;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-column-gap: 6vw;
 }
-
 .summary p:first-child {
   text-align: right;
 }
-
 @media (max-width: 900px) {
   .summary {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
     padding: 10vh 6vw;
   }
 }
@@ -286,23 +243,18 @@ nav li {
   width: 100%;
   padding: 0vh 20vw 15vh 20vw;
 }
-
 .projectslist .column {
-  display: -ms-grid;
   display: grid;
   padding: 3vh 0;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-column-gap: 6vw;
 }
-
 @media (max-width: 900px) {
   .projectslist {
     padding: 15vh 6vw;
   }
   .projectslist .column {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .projectslist .column p:first-child {
     text-align: left;
@@ -310,36 +262,25 @@ nav li {
 }
 
 .workexplist {
-  padding: 15vh 20vw 15vh 10vw;
-  display: -ms-grid;
+  padding: 15vh 15vw 0vh 15vw;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-column-gap: 6vw;
 }
-
 .workexplist p:first-child {
   text-align: right;
 }
-
 .workexplist .title {
   text-align: right;
 }
-
 @media (max-width: 900px) {
   .workexplist {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     padding: 10vh 6vw;
   }
   .workexplist .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .workexplist .title p {
     text-align: left;
@@ -348,33 +289,25 @@ nav li {
 
 .cards {
   padding: 15vh 20vw;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10vw;
   grid-row-gap: 10vh;
 }
-
 @media (max-width: 900px) {
   .cards {
     padding: 10vh 6vw;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 .card .heading {
   padding-bottom: 2vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .card .heading img {
   padding-right: 1vw;
 }
-
 @media (max-width: 900px) {
   .card .heading img {
     padding-right: 2vw;
@@ -396,26 +329,15 @@ nav li {
 .socials {
   height: 60vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .socials img {
   height: 40px;
   margin: 4px 0px 4px 0px;
 }
-
 .socials a, .socials p {
   font-size: large;
 }
@@ -423,5 +345,4 @@ nav li {
 head img {
   height: 20px;
   width: 20px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
